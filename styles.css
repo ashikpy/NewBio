@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
 
 ::-webkit-scrollbar {
@@ -94,7 +93,6 @@ a {
 }
 
 .header-text p {
-    /* padding-bottom: -3000000px; */
     margin-bottom: -200px;
     font-size: 30px;
 }
@@ -128,7 +126,6 @@ a {
 }
 
 .about-col-1 img {
-    /* width: 100%; */
     border-radius: 16px;
 }
 
@@ -150,4 +147,18 @@ a {
 .about-col-2 p {
     font-family: "Poppins", sans-serif;
     color: white;
+}
+
+.header-text {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
