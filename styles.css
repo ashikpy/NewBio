@@ -2,6 +2,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
 
+::-webkit-scrollbar {
+    width: 8px; /* Width of the entire scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 111, 196, 0.2); /* Gradient background */
+    border-radius: 10px; /* Rounded corners */
+}
+
 * {
     margin: 0;
     padding: 0;
