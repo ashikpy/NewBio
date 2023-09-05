@@ -162,3 +162,44 @@ a {
         opacity: 1;
     }
 }
+
+.tab-contents {
+    font-family: "Poppins", sans-serif;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #006fc4;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.discl {
+    position: relative;
+    font-family: "Poppins", Courier, monospace;
+    font-size: 11px;
+    top: -325px;
+    opacity: 0.6;
+    margin-left: 1340px;
+    writing-mode: vertical-rl;
+}
+
+.greatstack {
+    color: white;
+}
