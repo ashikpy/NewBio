@@ -52,22 +52,64 @@
               website! 😉🎵💻
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link">Programming</p>
-              <p class="tab-links">Music</p>
-              <p class="tab-links">Education</p>
+              <p class="tab-links active-link" onclick="opentab('programming')">
+                Programming
+              </p>
+              <p class="tab-links" onclick="opentab('music')">Music</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="tab-contents">
+            <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li><span>UI/UX</span><br />Designing Websites</li>
-                <li><span>Frontend</span><br />Building the Interface</li>
-                <li><span>Cloud</span><br />Cloud Computing</li>
+                <li>
+                  <span>Frontend</span><br />Building the Interface (learning)
+                </li>
                 <li><span>Python</span><br />Python Programming</li>
-                <li><span>Java</span><br />Java Programming</li>
+                <li><span>Cloud</span><br />Cloud Computing (learning)</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="music">
+              <ul>
+                <li><span>Piano</span><br />Keyboard Player About 5 years</li>
+                <li><span>Drums</span><br />Drums Player About 4 years</li>
+                <li><span>Guitar</span><br />Guitar Player About 3 years</li>
+                <li><span>Bass</span><br />Bass Player</li>
+                <li><span>Flute</span><br />Leraning😊</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <div class="schools">
+                  <li>
+                    <span>School</span><br />Kendriya Vidhyalaya Pangode <br />
+                    Kendriya Vidhyalaya Wellington <br />
+                    Kendriya Vidhyalaya Dhana <br />
+                    Kendriya Vidhyalaya Nagercoil
+                  </li>
+                </div>
+                <li>
+                  <span>College</span><br />B.Tech AI in Amrita College of
+                  Engineering and Technology (studying ) <br />
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
