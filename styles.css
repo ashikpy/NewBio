@@ -2,204 +2,204 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
 
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(75, 75, 75, 0.5); /* Gradient background */
-    border-radius: 10px; /* Rounded corners */
+  background: rgba(75, 75, 75, 0.5); /* Gradient background */
+  border-radius: 10px; /* Rounded corners */
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 #header {
-    height: 100vh;
-    background-image: url("./img/Ash\ 4.jpg");
-    background-size: cover;
-    background-position: center 70px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  height: 100vh;
+  background-image: url("./img/Ash\ 4.jpg");
+  background-size: cover;
+  background-position: center 70px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .logo {
-    margin: 20px;
-    height: 60px;
+  margin: 20px;
+  height: 60px;
 }
 
 .container {
-    padding: 5px 5%;
+  padding: 5px 5%;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
 }
 
 nav ul li a::after {
-    content: " ";
-    width: 0px;
-    height: 3px;
-    background: #006fc4;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+  content: " ";
+  width: 0px;
+  height: 3px;
+  background: #006fc4;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 a {
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
 .header-text {
-    font-family: "Poppins", sans-serif;
-    margin-top: 18%;
-    font-size: 20px;
-    line-height: 60.5px;
-    margin-left: 150px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 18%;
+  font-size: 20px;
+  line-height: 60.5px;
+  margin-left: 150px;
 }
 
 .header-text h1 {
-    font-size: 60px;
-    margin-top: 20px;
+  font-size: 60px;
+  margin-top: 20px;
 }
 
 .header-text p {
-    margin-bottom: -200px;
-    font-size: 30px;
+  margin-bottom: -200px;
+  font-size: 30px;
 }
 
 .header-text h1 span {
-    color: #006fc4;
+  color: #006fc4;
 }
 
 #about {
-    padding: 80px 0;
-    color: #ababab;
-    box-shadow: 0px 0px 200px rgba(0, 102, 255, 0.24);
+  padding: 80px 0;
+  color: #ababab;
+  box-shadow: 0px 0px 200px rgba(0, 102, 255, 0.24);
 }
 
 #about img {
-    height: 450px;
+  height: 450px;
 }
 
 #about h1 {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about-col-1 {
-    flex-basis: 25%;
+  flex-basis: 25%;
 }
 
 .about-col-1 img {
-    border-radius: 16px;
+  border-radius: 16px;
 }
 
 .about-col-2 {
-    flex-basis: 69%;
+  flex-basis: 69%;
 }
 
 .about-col-2 h1 {
-    font-weight: 100vh;
+  font-weight: 100vh;
 }
 
 .sub-title {
-    font-size: 55px;
-    font-weight: 600;
-    color: white;
-    margin-top: -18px;
+  font-size: 55px;
+  font-weight: 600;
+  color: white;
+  margin-top: -18px;
 }
 
 .about-col-2 p {
-    font-family: "Poppins", sans-serif;
-    color: white;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .header-text {
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .tab-contents {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
+  display: flex;
+  margin: 20px 0 40px;
 }
 
 .tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
 }
 
 .tab-links::after {
-    content: " ";
-    width: 0;
-    height: 3px;
-    background: #006fc4;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
+  content: " ";
+  width: 0;
+  height: 3px;
+  background: #006fc4;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
 }
 
 .discl {
-    position: relative;
-    font-family: "Poppins", Courier, monospace;
-    font-size: 11px;
-    top: -325px;
-    opacity: 0.6;
-    margin-left: 1340px;
-    writing-mode: vertical-rl;
+  position: relative;
+  font-family: "Poppins", Courier, monospace;
+  font-size: 11px;
+  top: -325px;
+  opacity: 0.6;
+  margin-left: 1340px;
+  writing-mode: vertical-rl;
 }
 
 .greatstack {
-    color: white;
+  color: white;
 }
