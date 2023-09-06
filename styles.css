@@ -165,6 +165,7 @@ a {
 
 .tab-contents {
   font-family: "Poppins", sans-serif;
+  margin-top: -14px;
 }
 
 .tab-titles {
@@ -185,9 +186,14 @@ a {
   width: 0;
   height: 3px;
   background: #006fc4;
+  position: absolute;
   left: 0;
   bottom: -8px;
   transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
 }
 
 .discl {
@@ -202,4 +208,26 @@ a {
 
 .greatstack {
   color: white;
+}
+
+.tab-contents ul li {
+  margin: 40px;
+  list-style: none;
+  margin: 10px 0;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.tab-contents ul li span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #006fc4;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
 }
