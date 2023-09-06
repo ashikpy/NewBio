@@ -231,3 +231,7 @@ a {
 .tab-contents.active-tab {
   display: block;
 }
+
+.schools li {
+  line-height: 20px !important;
+}
