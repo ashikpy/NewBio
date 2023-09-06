@@ -1,6 +1,12 @@
-//print hello using js in html
-const h = require('h');
-console.log('Hello from JavaScript!');
-module.exports = () => h('p', {}, 'Hello from JavaScript!');
-
-//does this print hello in html
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname) {
+  for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
