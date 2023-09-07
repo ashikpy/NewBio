@@ -254,14 +254,6 @@ p {
   margin-top: 50px;
 }
 
-.services-list div {
-  background: #111111;
-  padding: 40px;
-  font-size: 13px;
-  border-radius: 14px;
-  transition: background 0.5s, transform 0.5s;
-}
-
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
@@ -269,7 +261,6 @@ p {
 
 .services-list div h2 {
   font-size: 30px;
-  /* margin-bottom: 5px; */
 }
 
 .services-list div a {
@@ -280,7 +271,29 @@ p {
   display: inline-block;
 }
 
+.services-list div {
+  background: #111111;
+  padding: 40px;
+  font-size: 13px;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
 .services-list div:hover {
   background: rgba(0, 111, 196, 0.5);
-  transform: translateY(-10px);
+  transform: scale(1.1);
+  /* box-shadow: 0 0 10px rgba(221, 203, 203, 0.5); */
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list div a:hover {
+  color: red;
 }
