@@ -257,6 +257,7 @@ p {
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
+  /* margin-top: -10px; */
 }
 
 .services-list div h2 {
@@ -275,14 +276,15 @@ p {
   background: #111111;
   padding: 40px;
   font-size: 13px;
-  border-radius: 14px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
   transition: transform 0.3s ease;
   z-index: 2;
 }
 
 .services-list div:hover {
   background: rgba(0, 111, 196, 0.5);
-  transform: scale(1.1);
+  transform: scale(1.02);
   /* box-shadow: 0 0 10px rgba(221, 203, 203, 0.5); */
 }
 
