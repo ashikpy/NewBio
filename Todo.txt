@@ -1,2 +1,5 @@
-Make Portfolio Section
 Make animations and things
+    For the "learn-more" section = added some poppy effect ~ done
+    Make an effect for the pictures when hovered on to the pics there is a neon outline.
+        Not exactly a neon effect like some border shifted some of pixels yk.
+Make Portfolio Section

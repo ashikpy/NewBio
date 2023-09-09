@@ -151,7 +151,7 @@ a {
 
 .header-text {
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -294,8 +294,11 @@ p {
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
+  transition: transform 0.3s ease;
+  /* z-index: 2; */
 }
 
 .services-list div a:hover {
-  color: red;
+  /* color: red; */
+  transform: scale(1.1) translateX(5px) translateY(3px);
 }
