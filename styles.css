@@ -201,10 +201,11 @@ a {
 }
 
 .discl {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   font-family: "Poppins", Courier, monospace;
   font-size: 11px;
-  top: -325px;
   opacity: 0.6;
   margin-left: 1340px;
   writing-mode: vertical-rl;
